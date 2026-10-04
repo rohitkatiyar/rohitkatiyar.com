@@ -6,7 +6,7 @@
 <title>Rohit Katiyar</title>
 <meta name="description" content="Rohit Katiyar is an AI and machine learning engineer with 11+ years in software engineering, building conversational AI, knowledge graphs, RAG and LLM systems.">
 <meta property="og:title" content="Rohit Katiyar – AI & Machine Learning Engineer">
-<meta property="og:description" content="Conversational AI, knowledge graphs, RAG and LLM systems, taken from prototype to production.">
+<meta property="og:description" content="AI and machine learning engineer: conversational AI, knowledge graphs, RAG and LLM systems.">
 <meta property="og:image" content="https://rohitkatiyar.com/photo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 h1{font:400 clamp(56px,8.5vw,104px)/.92 "Instrument Serif",Georgia,serif;margin:0 0 20px;letter-spacing:-.015em}
 .role{font-size:21px;font-weight:500;margin:0 0 18px}
-.lede{color:var(--muted);max-width:52ch;margin:0 0 30px}
+.lede{color:var(--muted);max-width:56ch;margin:0}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:500;font-size:16px;text-decoration:none;border:1.5px solid var(--accent)}
 .btn.primary{background:var(--accent);color:#fff}
@@ -80,19 +80,6 @@ h1{font:400 clamp(56px,8.5vw,104px)/.92 "Instrument Serif",Georgia,serif;margin:
   .hero .wrap{grid-template-columns:1fr;gap:28px}
   .graph{max-width:420px;order:-1}
   .lbl{font-size:15px}
-}
-
-/* impact band */
-.impact{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
-.impact .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
-.impact .wrap>div{padding:28px 24px 28px 0}
-.impact .wrap>div+div{padding-left:24px;border-left:1px solid var(--line)}
-.impact b{display:block;font:400 44px/1 "Instrument Serif",Georgia,serif;color:var(--accent);margin-bottom:8px}
-.impact p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
-@media (max-width:760px){
-  .impact .wrap{grid-template-columns:1fr}
-  .impact .wrap>div,.impact .wrap>div+div{padding:20px 0;border-left:0}
-  .impact .wrap>div+div{border-top:1px solid var(--line)}
 }
 
 /* sections */
@@ -131,14 +118,8 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
 .edu h3{margin:0;font-size:18px;font-weight:600}
 .edu p{margin:2px 0 0;color:var(--muted)}
 
-/* contact band */
-.contact{margin-top:96px;background:var(--band);color:var(--band-ink);padding:72px 0 calc(48px + env(safe-area-inset-bottom,0px))}
-.contact h2{color:var(--band-ink);font-size:clamp(40px,6vw,64px);margin-bottom:14px}
-.contact p{color:var(--band-muted);max-width:50ch;margin:0 0 28px}
-.contact .btn.primary{background:#fff;border-color:#fff;color:#0F1C3F}
-.contact .btn.ghost{color:var(--band-ink);border-color:var(--band-muted)}
-.contact .btn.ghost:hover{background:rgba(255,255,255,.08)}
-.contact small{display:block;margin-top:56px;color:var(--band-muted);font-size:14px}
+/* footer */
+.foot{margin-top:96px;border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
@@ -146,12 +127,6 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top">Rohit Katiyar</a>
-    <ul>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
   </div>
 </nav>
 
@@ -160,16 +135,7 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
     <div>
       <h1>Rohit Katiyar</h1>
       <p class="role">AI / Machine Learning Engineer at Postman</p>
-      <p class="lede">11+ years in software engineering and 6+ in applied AI. I take AI projects from prototype to production: conversational AI, knowledge graphs, RAG and LLM-powered systems on AWS and GCP.</p>
-      <div class="actions">
-        <a class="btn primary" href="mailto:sep_rohit@yahoo.com">Email me</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/rohit-katiyar/" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.83v1.54h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21h-4V9.75Z"/></svg>
-          LinkedIn</a>
-        <a class="btn ghost" href="https://github.com/rohitkatiyar" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-          GitHub</a>
-      </div>
+      <p class="lede">AI and machine learning engineer with 6+ years of applied AI experience and 11+ years of software engineering spanning AI, machine learning and backend engineering. I lead AI initiatives from ideation and prototyping through MVP, production deployment and continuous improvement, combining machine learning expertise with strong software engineering, cloud and product skills to deliver scalable business solutions.</p>
     </div>
 
     <figure class="graph" aria-label="Portrait of Rohit Katiyar surrounded by his areas of focus">
@@ -202,61 +168,7 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
   </div>
 </header>
 
-<section class="impact" aria-label="Highlights">
-  <div class="wrap">
-    <div><b>40M+</b><p>developers on the platform where I built Postman's multi-protocol Cloud Agent service</p></div>
-    <div><b>3,000+</b><p>enterprise customers served by the conversational AI platform I led at Cisco</p></div>
-    <div><b>Minutes</b><p>to resolve customer issues that used to take from 3 hours to a week</p></div>
-  </div>
-</section>
-
 <main>
-<section class="section" id="experience">
-  <div class="wrap split">
-    <h2>Experience</h2>
-    <ol class="tl">
-      <li class="job now">
-        <h3>Software Engineer, <span class="co">Postman</span></h3>
-        <p class="when">San Francisco, CA. Dec 2024 to present</p>
-        <ul>
-          <li>Architected a Golang multiplexing service for Postman's Cloud Agent, extending web-based request execution beyond HTTP to MCP, AI provider calls, MQTT, gRPC, WebSocket and Socket.IO.</li>
-          <li>Enhanced backend services for multi-protocol history and package storage in TypeScript and Node.js.</li>
-          <li>Contributed to the scalability and reliability of production services behind Postman's developer platform.</li>
-        </ul>
-        <div class="tags"><span>Golang</span><span>TypeScript</span><span>Node.js</span><span>MCP</span><span>Microservices</span></div>
-      </li>
-      <li class="job">
-        <h3>Data Engineer / Software Engineer, <span class="co">Cisco</span></h3>
-        <p class="when">San Jose, CA. Sep 2019 to Oct 2024</p>
-        <ul>
-          <li>Led an enterprise conversational AI platform on Dialogflow, Voiceflow and AWS Lex for 3,000+ US customers, cutting issue resolution from hours or days to minutes.</li>
-          <li>Built an AI observability and feedback platform for conversation validation, quality measurement and continuous model improvement.</li>
-          <li>Designed knowledge-graph question answering with Neo4j, AWS Neptune, SPARQL, Cypher and RDF/OWL ontologies.</li>
-          <li>Built LLM semantic search and RAG over product documentation and support data, plus an internal AI agents platform on the OpenAI SDK.</li>
-          <li>Won the XDI Hackathon 2022 and placed second at the CXP Hackathon 2023.</li>
-        </ul>
-        <div class="tags"><span>Python</span><span>Java</span><span>LLMs</span><span>RAG</span><span>LangChain</span><span>Neo4j</span><span>AWS</span><span>GCP</span></div>
-      </li>
-      <li class="job">
-        <h3>Software Engineer, <span class="co">Valiantica</span></h3>
-        <p class="when">San Jose, CA. Apr 2018 to Jul 2019</p>
-        <ul>
-          <li>Built semantic search and question-answering systems on ontology-driven knowledge representations.</li>
-          <li>Developed a data collaboration web app for project data management.</li>
-        </ul>
-        <div class="tags"><span>NLP</span><span>Neo4j</span><span>Kafka</span><span>Elasticsearch</span></div>
-      </li>
-      <li class="job earlier">
-        <h3>Earlier roles</h3>
-        <p class="when">2012 to 2017</p>
-        <p>Graduate Teaching Assistant for Machine Learning, UNC Charlotte</p>
-        <p>Senior Software Engineer, Capgemini, Pune: storage driver simulator in C++</p>
-        <p>Software Engineer, Persistent Systems, Pune: foreign-exchange settlement systems in C/C++</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
 <section class="section" id="skills">
   <div class="wrap split">
     <h2>Skills</h2>
@@ -282,18 +194,7 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
 </section>
 </main>
 
-<footer class="contact" id="contact">
-  <div class="wrap">
-    <h2>Let's talk</h2>
-    <p>Open to conversations about AI engineering, LLM systems and building products that ship.</p>
-    <div class="actions">
-      <a class="btn primary" href="mailto:sep_rohit@yahoo.com">sep_rohit@yahoo.com</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/rohit-katiyar/" rel="noopener">LinkedIn</a>
-      <a class="btn ghost" href="https://github.com/rohitkatiyar" rel="noopener">GitHub</a>
-    </div>
-    <small>© 2026 Rohit Katiyar</small>
-  </div>
-</footer>
+<footer class="foot"><div class="wrap">© 2026 Rohit Katiyar</div></footer>
 
 </body>
 </html>
