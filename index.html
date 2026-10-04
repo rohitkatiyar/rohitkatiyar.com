@@ -3,114 +3,297 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rohit Katiyar – AI & Machine Learning Engineer</title>
-<meta name="description" content="Rohit Katiyar is an AI/ML engineer with 11+ years in software engineering, building conversational AI, knowledge graphs, RAG and LLM systems.">
+<title>Rohit Katiyar</title>
+<meta name="description" content="Rohit Katiyar is an AI and machine learning engineer with 11+ years in software engineering, building conversational AI, knowledge graphs, RAG and LLM systems.">
+<meta property="og:title" content="Rohit Katiyar – AI & Machine Learning Engineer">
+<meta property="og:description" content="Conversational AI, knowledge graphs, RAG and LLM systems, taken from prototype to production.">
+<meta property="og:image" content="https://rohitkatiyar.com/photo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F1F3F7;--ink:#14213D;--muted:#566175;--line:#D3D9E4;--accent:#2B52D6;--chip:#E3E8F2;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10172A;--ink:#E8ECF6;--muted:#9AA6BF;--line:#26304A;--accent:#7C9BFF;--chip:#1B2542}}
-:root[data-theme="dark"]{--bg:#10172A;--ink:#E8ECF6;--muted:#9AA6BF;--line:#26304A;--accent:#7C9BFF;--chip:#1B2542}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
+:root{
+  --bg:#F5F6FA; --surface:#FFFFFF; --ink:#0F1C3F; --muted:#56627E; --line:#DCE1EC;
+  --accent:#2F5BEA; --accent-soft:#E4EAFD; --node:#0E9F95; --band:#0F1C3F; --band-ink:#EEF1F9; --band-muted:#A9B4D0;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1428; --surface:#141D36; --ink:#E9EDF7; --muted:#9CA7C3; --line:#26304D;
+  --accent:#7D9BFF; --accent-soft:#1D2A55; --node:#3CCFC2; --band:#070C1A; --band-ink:#E9EDF7; --band-muted:#8F9AB8;
+}}
+:root[data-theme="dark"]{
+  --bg:#0D1428; --surface:#141D36; --ink:#E9EDF7; --muted:#9CA7C3; --line:#26304D;
+  --accent:#7D9BFF; --accent-soft:#1D2A55; --node:#3CCFC2; --band:#070C1A; --band-ink:#E9EDF7; --band-muted:#8F9AB8;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
-main{max-width:760px;margin:0 auto;padding:56px 24px 72px}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-h1{font:400 clamp(52px,12vw,88px)/.95 "Instrument Serif",Georgia,serif;margin:0 0 20px;letter-spacing:-.01em}
-h2{font:400 32px/1.1 "Instrument Serif",Georgia,serif;margin:0 0 20px}
-.role{font-size:20px;font-weight:500;margin:0 0 16px}
-.lede{max-width:62ch;color:var(--muted);margin:0 0 24px}
-.links{display:flex;flex-wrap:wrap;gap:8px 24px;font-weight:500}
-section{margin-top:64px;padding-top:32px;border-top:1px solid var(--line)}
-.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
-.tl>li{position:relative;margin-bottom:36px}
-.tl>li::before{content:"";position:absolute;left:-29px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
-.tl h3{margin:0;font-size:18px;font-weight:600}
-.meta{color:var(--muted);font-size:15px;margin:2px 0 10px}
-.tl ul{margin:0;padding-left:18px}
-.tl li li{margin-bottom:6px}
-.group{margin-bottom:20px}
-.group h3{font-size:15px;font-weight:600;color:var(--muted);margin:0 0 8px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font:400 24px/1 "Instrument Serif",Georgia,serif;color:var(--ink);text-decoration:none}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+.nav ul a{color:var(--muted);text-decoration:none}
+.nav ul a:hover{color:var(--ink)}
+@media (max-width:640px){.nav ul li:not(:last-child){display:none}}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+h1{font:400 clamp(56px,8.5vw,104px)/.92 "Instrument Serif",Georgia,serif;margin:0 0 20px;letter-spacing:-.015em}
+.role{font-size:21px;font-weight:500;margin:0 0 18px}
+.lede{color:var(--muted);max-width:52ch;margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:500;font-size:16px;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0D1428}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#0D1428}}
+.btn.ghost{color:var(--accent)}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn svg{width:18px;height:18px}
+
+.graph{width:100%;max-width:500px;justify-self:center}
+.graph svg{display:block;width:100%;height:auto;overflow:visible}
+.edge{stroke:var(--line);stroke-width:1.5}
+.edge.spoke{stroke:var(--accent);stroke-opacity:.45;stroke-width:1.6}
+.ring{fill:none;stroke:var(--line);stroke-width:1.2;stroke-dasharray:3 6}
+.dot{fill:var(--surface);stroke:var(--node);stroke-width:2.5}
+.lbl{fill:var(--ink);font:500 14px "IBM Plex Sans",sans-serif}
+.halo{fill:var(--accent-soft)}
+.mono{fill:var(--accent);font:400 64px "Instrument Serif",Georgia,serif}
+.frame{fill:none;stroke:var(--accent);stroke-width:3}
+
+@media (prefers-reduced-motion:no-preference){
+  .spoke{stroke-dasharray:200;stroke-dashoffset:200;animation:draw .9s ease-out forwards}
+  .spoke:nth-of-type(2){animation-delay:.08s}.spoke:nth-of-type(3){animation-delay:.16s}
+  .spoke:nth-of-type(4){animation-delay:.24s}.spoke:nth-of-type(5){animation-delay:.32s}.spoke:nth-of-type(6){animation-delay:.4s}
+  .nodes g{opacity:0;animation:pop .5s ease-out forwards;animation-delay:.7s}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes pop{to{opacity:1}}
+}
+
+@media (max-width:860px){
+  .hero{padding:40px 0 32px}
+  .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .graph{max-width:420px;order:-1}
+  .lbl{font-size:15px}
+}
+
+/* impact band */
+.impact{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.impact .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.impact .wrap>div{padding:28px 24px 28px 0}
+.impact .wrap>div+div{padding-left:24px;border-left:1px solid var(--line)}
+.impact b{display:block;font:400 44px/1 "Instrument Serif",Georgia,serif;color:var(--accent);margin-bottom:8px}
+.impact p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+@media (max-width:760px){
+  .impact .wrap{grid-template-columns:1fr}
+  .impact .wrap>div,.impact .wrap>div+div{padding:20px 0;border-left:0}
+  .impact .wrap>div+div{border-top:1px solid var(--line)}
+}
+
+/* sections */
+.section{padding:80px 0 0}
+h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
+.split{display:grid;grid-template-columns:220px 1fr;gap:40px}
+.split>h2{margin:0}
+@media (max-width:760px){.split{grid-template-columns:1fr;gap:20px}.section{padding-top:60px}h2{font-size:38px}}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0}
+.job{position:relative;padding:0 0 36px 30px;border-left:2px solid var(--line)}
+.job:last-child{padding-bottom:0;border-left-color:transparent}
+.job::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2.5px solid var(--node)}
+.job.now::before{background:var(--node)}
+.job h3{margin:0;font-size:19px;font-weight:600;line-height:1.35}
+.job .co{color:var(--accent)}
+.when{color:var(--muted);font-size:15px;margin:2px 0 10px}
+.job ul{margin:0 0 12px;padding-left:18px}
+.job li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:13px;font-weight:500;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
+.earlier p{margin:0 0 6px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.skill.wide{grid-column:1/-1}
+.skill h3{margin:0 0 12px;font-size:16px;font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chips span{background:var(--chip);border-radius:6px;padding:3px 10px;font-size:15px}
-.edu p{margin:0 0 14px}
-.edu b{font-weight:600}
-footer{margin-top:64px;color:var(--muted);font-size:14px}
+.chips span{font-size:14px;padding:3px 11px;border-radius:8px;border:1px solid var(--line);background:var(--bg)}
+@media (max-width:760px){.skills{grid-template-columns:1fr}}
+
+/* education */
+.edu{display:grid;gap:22px}
+.edu h3{margin:0;font-size:18px;font-weight:600}
+.edu p{margin:2px 0 0;color:var(--muted)}
+
+/* contact band */
+.contact{margin-top:96px;background:var(--band);color:var(--band-ink);padding:72px 0 calc(48px + env(safe-area-inset-bottom,0px))}
+.contact h2{color:var(--band-ink);font-size:clamp(40px,6vw,64px);margin-bottom:14px}
+.contact p{color:var(--band-muted);max-width:50ch;margin:0 0 28px}
+.contact .btn.primary{background:#fff;border-color:#fff;color:#0F1C3F}
+.contact .btn.ghost{color:var(--band-ink);border-color:var(--band-muted)}
+.contact .btn.ghost:hover{background:rgba(255,255,255,.08)}
+.contact small{display:block;margin-top:56px;color:var(--band-muted);font-size:14px}
 </style>
 </head>
 <body>
-<main>
-<header>
-<h1>Rohit Katiyar</h1>
-<p class="role">AI / Machine Learning Engineer</p>
-<p class="lede">11+ years in software engineering, 6+ in applied AI. I take AI projects from prototype to production, building conversational AI, knowledge graphs, RAG and LLM-powered systems on AWS and GCP.</p>
-<div class="links">
-<a href="https://www.linkedin.com/in/rohit-katiyar/" rel="noopener">LinkedIn</a>
-<a href="mailto:sep_rohit@yahoo.com">sep_rohit@yahoo.com</a>
-<a href="#resume" id="rl">Resume</a>
-</div>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Rohit Katiyar</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Rohit Katiyar</h1>
+      <p class="role">AI / Machine Learning Engineer at Postman</p>
+      <p class="lede">11+ years in software engineering and 6+ in applied AI. I take AI projects from prototype to production: conversational AI, knowledge graphs, RAG and LLM-powered systems on AWS and GCP.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:sep_rohit@yahoo.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/rohit-katiyar/" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.83v1.54h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21h-4V9.75Z"/></svg>
+          LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/rohitkatiyar" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          GitHub</a>
+      </div>
+    </div>
+
+    <figure class="graph" aria-label="Portrait of Rohit Katiyar surrounded by his areas of focus">
+      <svg viewBox="-90 0 580 410" role="img" aria-labelledby="gt">
+        <title id="gt">Rohit Katiyar, with focus areas: LLMs and RAG, knowledge graphs, conversational AI, MCP and AI infrastructure, MLOps, Golang and Python</title>
+        <defs><clipPath id="cp"><circle cx="200" cy="205" r="92"/></clipPath></defs>
+        <circle class="ring" cx="200" cy="205" r="165"/>
+        <g>
+          <line class="edge spoke" x1="200" y1="205" x2="200" y2="40"/>
+          <line class="edge spoke" x1="200" y1="205" x2="343" y2="122"/>
+          <line class="edge spoke" x1="200" y1="205" x2="343" y2="288"/>
+          <line class="edge spoke" x1="200" y1="205" x2="200" y2="370"/>
+          <line class="edge spoke" x1="200" y1="205" x2="57" y2="288"/>
+          <line class="edge spoke" x1="200" y1="205" x2="57" y2="122"/>
+        </g>
+        <circle class="halo" cx="200" cy="205" r="104"/>
+        <text class="mono" x="200" y="226" text-anchor="middle">RK</text>
+        <image onerror="this.remove()" href="photo.jpg" x="108" y="113" width="184" height="184" preserveAspectRatio="xMidYMid slice" clip-path="url(#cp)"/>
+        <circle class="frame" cx="200" cy="205" r="92"/>
+        <g class="nodes">
+          <g><circle class="dot" cx="200" cy="40" r="8"/><text class="lbl" x="200" y="18" text-anchor="middle">LLMs &amp; RAG</text></g>
+          <g><circle class="dot" cx="343" cy="122" r="8"/><text class="lbl" x="358" y="127">Knowledge graphs</text></g>
+          <g><circle class="dot" cx="343" cy="288" r="8"/><text class="lbl" x="358" y="293">Conversational AI</text></g>
+          <g><circle class="dot" cx="200" cy="370" r="8"/><text class="lbl" x="200" y="400" text-anchor="middle">MCP &amp; AI infrastructure</text></g>
+          <g><circle class="dot" cx="57" cy="288" r="8"/><text class="lbl" x="42" y="293" text-anchor="end">MLOps</text></g>
+          <g><circle class="dot" cx="57" cy="122" r="8"/><text class="lbl" x="42" y="127" text-anchor="end">Golang &amp; Python</text></g>
+        </g>
+      </svg>
+    </figure>
+  </div>
 </header>
 
-<section aria-labelledby="exp">
-<h2 id="exp">Experience</h2>
-<ol class="tl">
-<li>
-<h3>Software Engineer, Postman</h3>
-<p class="meta">San Francisco, CA · Dec 2024 – Present</p>
-<ul>
-<li>Architected a Golang multiplexing service for Postman's Cloud Agent, extending web-based request execution beyond HTTP to MCP, AI provider calls, MQTT, gRPC, WebSocket and Socket.IO.</li>
-<li>The platform serves 40M+ users across 500,000+ organizations.</li>
-<li>Built multi-protocol history and package storage services in TypeScript and Node.js.</li>
-</ul>
-</li>
-<li>
-<h3>Data Engineer / Software Engineer, Cisco Systems</h3>
-<p class="meta">San Jose, CA · Sep 2019 – Oct 2024</p>
-<ul>
-<li>Led an enterprise conversational AI platform (Dialogflow, Voiceflow, AWS Lex) for 3,000+ customers, cutting issue resolution from 3 hours–1 week to a few minutes.</li>
-<li>Built an AI observability and feedback platform for conversation validation and continuous model improvement.</li>
-<li>Designed knowledge-graph question answering with Neo4j, AWS Neptune, SPARQL, Cypher and RDF/OWL.</li>
-<li>Built LLM semantic search and RAG over product documentation and support data, plus an internal AI agents platform on the OpenAI SDK.</li>
-<li>Won the XDI Hackathon 2022 and placed 2nd at the CXP Hackathon 2023.</li>
-</ul>
-</li>
-<li>
-<h3>Software Engineer, Valiantica</h3>
-<p class="meta">San Jose, CA · Apr 2018 – Jul 2019</p>
-<ul>
-<li>Built semantic search and question-answering systems on ontology-driven knowledge representations.</li>
-<li>Developed a data collaboration web app for project data management.</li>
-</ul>
-</li>
-<li>
-<h3>Earlier roles</h3>
-<p class="meta">Graduate Teaching Assistant, UNC Charlotte (2017) · Capgemini, Pune (2015–2016) · Persistent Systems, Pune (2012–2015)</p>
-<ul>
-<li>C/C++ and Java systems work in storage drivers and foreign-exchange settlement, plus teaching assistant for Machine Learning.</li>
-</ul>
-</li>
-</ol>
+<section class="impact" aria-label="Highlights">
+  <div class="wrap">
+    <div><b>40M+</b><p>developers on the platform where I built Postman's multi-protocol Cloud Agent service</p></div>
+    <div><b>3,000+</b><p>enterprise customers served by the conversational AI platform I led at Cisco</p></div>
+    <div><b>Minutes</b><p>to resolve customer issues that used to take from 3 hours to a week</p></div>
+  </div>
 </section>
 
-<section aria-labelledby="sk">
-<h2 id="sk">Skills</h2>
-<div class="group"><h3>AI / ML</h3><div class="chips"><span>LLMs</span><span>RAG</span><span>Conversational AI</span><span>Knowledge Graphs</span><span>Prompt Engineering</span><span>NLP</span><span>LangChain</span><span>OpenAI</span><span>Transformers</span><span>PyTorch</span><span>Keras</span><span>scikit-learn</span><span>spaCy</span></div></div>
-<div class="group"><h3>Conversational frameworks</h3><div class="chips"><span>AWS Lex</span><span>Dialogflow</span><span>Voiceflow</span><span>RASA</span><span>MindMeld</span></div></div>
-<div class="group"><h3>Cloud and MLOps</h3><div class="chips"><span>AWS SageMaker</span><span>Lambda</span><span>ECS</span><span>GCP Vertex AI</span><span>Cloud Run</span><span>Kubernetes</span><span>Docker</span></div></div>
-<div class="group"><h3>Data</h3><div class="chips"><span>Neo4j</span><span>AWS Neptune</span><span>RDF/OWL</span><span>Elasticsearch</span><span>MongoDB</span><span>SPARQL</span><span>Cypher</span></div></div>
-<div class="group"><h3>Languages and tools</h3><div class="chips"><span>Python</span><span>Golang</span><span>Java</span><span>TypeScript</span><span>Node.js</span><span>C++</span><span>FastAPI</span><span>Claude Code</span><span>Cursor</span><span>GitHub Copilot</span></div></div>
+<main>
+<section class="section" id="experience">
+  <div class="wrap split">
+    <h2>Experience</h2>
+    <ol class="tl">
+      <li class="job now">
+        <h3>Software Engineer, <span class="co">Postman</span></h3>
+        <p class="when">San Francisco, CA. Dec 2024 to present</p>
+        <ul>
+          <li>Architected a Golang multiplexing service for Postman's Cloud Agent, extending web-based request execution beyond HTTP to MCP, AI provider calls, MQTT, gRPC, WebSocket and Socket.IO.</li>
+          <li>Enhanced backend services for multi-protocol history and package storage in TypeScript and Node.js.</li>
+          <li>Contributed to the scalability and reliability of production services behind Postman's developer platform.</li>
+        </ul>
+        <div class="tags"><span>Golang</span><span>TypeScript</span><span>Node.js</span><span>MCP</span><span>Microservices</span></div>
+      </li>
+      <li class="job">
+        <h3>Data Engineer / Software Engineer, <span class="co">Cisco</span></h3>
+        <p class="when">San Jose, CA. Sep 2019 to Oct 2024</p>
+        <ul>
+          <li>Led an enterprise conversational AI platform on Dialogflow, Voiceflow and AWS Lex for 3,000+ US customers, cutting issue resolution from hours or days to minutes.</li>
+          <li>Built an AI observability and feedback platform for conversation validation, quality measurement and continuous model improvement.</li>
+          <li>Designed knowledge-graph question answering with Neo4j, AWS Neptune, SPARQL, Cypher and RDF/OWL ontologies.</li>
+          <li>Built LLM semantic search and RAG over product documentation and support data, plus an internal AI agents platform on the OpenAI SDK.</li>
+          <li>Won the XDI Hackathon 2022 and placed second at the CXP Hackathon 2023.</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Java</span><span>LLMs</span><span>RAG</span><span>LangChain</span><span>Neo4j</span><span>AWS</span><span>GCP</span></div>
+      </li>
+      <li class="job">
+        <h3>Software Engineer, <span class="co">Valiantica</span></h3>
+        <p class="when">San Jose, CA. Apr 2018 to Jul 2019</p>
+        <ul>
+          <li>Built semantic search and question-answering systems on ontology-driven knowledge representations.</li>
+          <li>Developed a data collaboration web app for project data management.</li>
+        </ul>
+        <div class="tags"><span>NLP</span><span>Neo4j</span><span>Kafka</span><span>Elasticsearch</span></div>
+      </li>
+      <li class="job earlier">
+        <h3>Earlier roles</h3>
+        <p class="when">2012 to 2017</p>
+        <p>Graduate Teaching Assistant for Machine Learning, UNC Charlotte</p>
+        <p>Senior Software Engineer, Capgemini, Pune: storage driver simulator in C++</p>
+        <p>Software Engineer, Persistent Systems, Pune: foreign-exchange settlement systems in C/C++</p>
+      </li>
+    </ol>
+  </div>
 </section>
 
-<section aria-labelledby="ed" class="edu" id="resume">
-<h2 id="ed">Education</h2>
-<p><b>M.S. Computer Science</b>, University of North Carolina at Charlotte, Dec 2017. GPA 3.9, concentration in Intelligent and Interactive Systems.</p>
-<p><b>B.Tech Computer Science</b>, Uttar Pradesh Technical University, India, 2012.</p>
-<p><b>Reinforcement Learning certificate</b>, Stanford University, Feb 2023.</p>
+<section class="section" id="skills">
+  <div class="wrap split">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill wide"><h3>AI and machine learning</h3><div class="chips"><span>LLMs</span><span>RAG</span><span>Conversational AI</span><span>Knowledge graphs</span><span>Prompt engineering</span><span>NLP</span><span>LangChain</span><span>OpenAI</span><span>Transformers</span><span>BERT</span><span>PyTorch</span><span>Keras</span><span>scikit-learn</span><span>spaCy</span></div></div>
+      <div class="skill"><h3>Conversational frameworks</h3><div class="chips"><span>AWS Lex</span><span>Dialogflow</span><span>Voiceflow</span><span>RASA</span><span>MindMeld</span></div></div>
+      <div class="skill"><h3>Cloud and MLOps</h3><div class="chips"><span>SageMaker</span><span>Lambda</span><span>ECS</span><span>Vertex AI</span><span>Cloud Run</span><span>Kubernetes</span><span>Docker</span></div></div>
+      <div class="skill"><h3>Data and graphs</h3><div class="chips"><span>Neo4j</span><span>AWS Neptune</span><span>RDF/OWL</span><span>SPARQL</span><span>Cypher</span><span>Elasticsearch</span><span>MongoDB</span></div></div>
+      <div class="skill"><h3>Languages and tools</h3><div class="chips"><span>Python</span><span>Golang</span><span>Java</span><span>TypeScript</span><span>Node.js</span><span>C++</span><span>FastAPI</span><span>Claude Code</span><span>Cursor</span></div></div>
+    </div>
+  </div>
 </section>
 
-<footer>© Rohit Katiyar</footer>
+<section class="section" id="education">
+  <div class="wrap split">
+    <h2>Education</h2>
+    <div class="edu">
+      <div><h3>M.S. Computer Science</h3><p>University of North Carolina at Charlotte, 2017. GPA 3.9, concentration in Intelligent and Interactive Systems.</p></div>
+      <div><h3>Reinforcement Learning certificate</h3><p>Stanford University, 2023</p></div>
+      <div><h3>B.Tech Computer Science</h3><p>Uttar Pradesh Technical University, India, 2012</p></div>
+    </div>
+  </div>
+</section>
 </main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Open to conversations about AI engineering, LLM systems and building products that ship.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:sep_rohit@yahoo.com">sep_rohit@yahoo.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/rohit-katiyar/" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/rohitkatiyar" rel="noopener">GitHub</a>
+    </div>
+    <small>© 2026 Rohit Katiyar</small>
+  </div>
+</footer>
+
 </body>
 </html>
