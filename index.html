@@ -118,8 +118,12 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
 .edu h3{margin:0;font-size:18px;font-weight:600}
 .edu p{margin:2px 0 0;color:var(--muted)}
 
-/* footer */
-.foot{margin-top:96px;border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:14px}
+/* contact band */
+.contact{margin-top:96px;background:var(--band);color:var(--band-ink);padding:72px 0 calc(48px + env(safe-area-inset-bottom,0px))}
+.contact h2{color:var(--band-ink);font-size:clamp(40px,6vw,64px);margin-bottom:14px}
+.contact p{color:var(--band-muted);max-width:50ch;margin:0 0 28px}
+.contact .btn.primary{background:#fff;border-color:#fff;color:#0F1C3F}
+.contact small{display:block;margin-top:56px;color:var(--band-muted);font-size:14px}
 </style>
 </head>
 <body>
@@ -127,6 +131,7 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
 <nav class="nav" aria-label="Main">
   <div class="wrap">
     <a class="brand" href="#top">Rohit Katiyar</a>
+    <ul><li><a href="#contact">Contact</a></li></ul>
   </div>
 </nav>
 
@@ -194,7 +199,14 @@ h2{font:400 44px/1.05 "Instrument Serif",Georgia,serif;margin:0 0 32px}
 </section>
 </main>
 
-<footer class="foot"><div class="wrap">© 2026 Rohit Katiyar</div></footer>
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Open to conversations about AI engineering, LLM systems and building products that ship. The best way to reach me is on LinkedIn.</p>
+    <a class="btn primary" href="https://www.linkedin.com/in/rohit-katiyar/" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.83v1.54h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21h-4V9.75Z"/></svg> Connect on LinkedIn</a>
+    <small>© 2026 Rohit Katiyar</small>
+  </div>
+</footer>
 
 </body>
 </html>
